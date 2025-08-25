@@ -4,13 +4,13 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Waqas Javed',
       comment: 'Best salon experience ever! The stylists are true professionals.',
       rating: '★★★★★',
     },
     {
       id: 2,
-      name: 'Michael Chen',
+      name: 'Israr',
       comment: 'Always leave feeling like a new person. Highly recommend!',
       rating: '★★★★★',
     },
