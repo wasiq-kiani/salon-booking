@@ -5,7 +5,8 @@ import Services from './components/Services';
 import BookingForm from './components/BookingForm';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import './styles.css';
+import './Styles.css';
+//import '/src/Styles.css';
 
 function App() {
   return (
