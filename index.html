@@ -1,13 +1,29 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saloon</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<!-- Urdu font support -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+	/* --- CHATBOT POSITIONING FIX --- */
+	/* This targets the chatbot container and forces it to the bottom-left corner */
+	.n8n-chat {
+		left: 20px !important; /* Position 20px from the left edge */
+		right: auto !important; /* Disable default right positioning */
+		bottom: 20px !important; /* Position 20px from the bottom edge */
+	}
+	/* ------------------------------ */
+
+	/* Urdu text support */
+	.chat-message, .chat-input, .chat-window {
+		font-family: 'Noto Nastaliq Urdu', Arial, sans-serif !important;
+		
+		unicode-bidi: plaintext;
+	}
+	
+	/* Better Urdu rendering */
+	.chat-message p, .chat-input input {
+		line-height: 1.8 !important;
+		font-size: 16px !important;
+	}
+</style>
+
