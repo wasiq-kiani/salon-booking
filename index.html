@@ -1,3 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saloon</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://localhost:5678/webhook/b99dad0d-75db-479a-b49c-6c8f2763d1b9/chat'
+	});
+</script> -->
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+	
+	createChat({
+		// ⚠ IMPORTANT: اپنی workflow سے Production URL یہاں paste کریں
+		webhookUrl: 'https://nazishjahan33.app.n8n.cloud/webhook/99ad61e0-015e-48bf-8c39-78d91a7ac055/chat',
+		
+		chatWindowOptions: {
+			title: 'سک نیچرل اسسٹنٹ | SK Natural Assistant',
+			welcomeMessage: 'السلام علیکم! Welcome to SK Natural',
+			inputPlaceholder: 'اپنا سوال لکھیں... Ask your question...',
+		},
+		
+		mode: 'window',
+		showWelcomeScreen: false,
+		
+		// Additional settings for better experience
+		i18n: {
+			en: {
+				title: 'SK Natural Assistant',
+				subtitle: 'Ask me about our products',
+				footer: '',
+				getStarted: 'Start chat',
+				inputPlaceholder: 'اپنا سوال لکھیں...'
+			}
+		}
+	});
+</script>
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
 <!-- Urdu font support -->
@@ -24,6 +72,13 @@
 	.chat-message p, .chat-input input {
 		line-height: 1.8 !important;
 		font-size: 16px !important;
+
+
+
+    
 	}
 </style>
 
+
+  </body>
+</html>
